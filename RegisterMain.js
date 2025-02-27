@@ -9,9 +9,9 @@ let conPassInput = document.getElementById("conPassInput");
 let PconPassInput = document.getElementById("PconPassInput");
 let RegisterBtn = document.getElementById("RegisterBtn");
 
-let namePattern = /^[a-zA-Z0-9_@-]+$/;
+let namePattern = /^[a-zA-Z0-9_@-\s]+$/;
 let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.com$/;
-
+let passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()])[A-Za-z\d!@#$%^&*()]{8,}$/;
 RegForm.addEventListener("submit",(e)=>{
     e.preventDefault();
         PnameInput.innerText = "."; PemailInput.innerText = "."; PpasswordInput.innerText = "."; PconPassInput.innerText = ".";
@@ -25,7 +25,7 @@ RegForm.addEventListener("submit",(e)=>{
             PnameInput.style.color="red";
             nameError = true;
         } else {
-            PnameInput.innerText = "Email is not valid";
+            PnameInput.innerText = "Name is not valid";
             PnameInput.style.color="red";
             nameError = true;
         }
@@ -42,17 +42,21 @@ RegForm.addEventListener("submit",(e)=>{
         }
         
     }
-    if(passwordInput.value || passwordInput.value === "" || conPassInput.value === ""){
+    if(!passwordPattern.test(passwordInput.value) || passwordInput.value || passwordInput.value === "" || conPassInput.value === ""){
         if(passwordInput.value === "" ){
             PpasswordInput.innerText = "Requird Password";
             PpasswordInput.style.color="red";
             passwordError = true ;
-        }else if(passwordInput.value.length < 8 ){
+        } else if(!passwordPattern.test(passwordInput.value)){
+            PpasswordInput.innerText = "Password should contain At least one uppercase letter, one lowercase letter, one digit, one special character (!@#$%^&*())";
+            PpasswordInput.style.color="red";
+            passwordError = true ;
+        } else if(passwordInput.value.length < 8 ){
             PpasswordInput.innerText = "passord must be 8 char at least";
             PpasswordInput.style.color="red";
             
             passwordError = true ;
-        } 
+        }
         if(conPassInput.value === ""){
             PconPassInput.innerText = "Requird Confirm Password";
             PconPassInput.style.color="red";
@@ -62,6 +66,7 @@ RegForm.addEventListener("submit",(e)=>{
             PconPassInput.style.color="red";
             passwordError = true ;
         }
+        
     }
     if(nameError || emailError || passwordError){
         return;
