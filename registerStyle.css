@@ -1,0 +1,353 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#RegisterBtn {
+
+    background-color: rgb(219, 68, 68) !important;
+    color: white !important;
+    font-weight: 600 !important;
+    border: none !important;
+    width: 100%;
+    margin: 1rem 0rem !important;
+    height: 3rem !important;
+}
+
+#RegisterBtn:hover {
+    background-color: white !important;
+    color: rgb(219, 68, 68) !important;
+    border: 0.1rem solid rgb(219, 68, 68) !important;
+    height: 3rem !important;
+}
+
+#RImage {
+    width: 45rem !important;
+}
+
+#form {
+    width: 30rem;
+    margin-top: 6rem;
+}
+
+#form input {
+    margin: 0.5rem 0rem !important;
+    border: none;
+    border-bottom: 2px solid rgb(223, 223, 223) !important;
+    width: 100%;
+    padding: 0.7rem;
+}
+
+#form input:focus {
+    border: 0.1rem solid !important;
+    border-radius: 0.2rem !important;
+}
+
+form p {
+    color: white;
+}
+
+#head {
+    margin-top: 3rem;
+}
+
+#form p {
+    font-weight: 600;
+}
+
+#nav {
+    padding: 0.8rem !important;
+    background-color: white !important;
+    border-bottom: 2px solid rgb(223, 223, 223) !important;
+}
+
+#lo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#icon {
+    font-weight: 800;
+}
+
+#log {
+    display: inline !important;
+    text-decoration: none;
+}
+
+#loginBtn {
+
+    background-color: rgb(219, 68, 68) !important;
+    color: white !important;
+    font-weight: 600 !important;
+    border: none !important;
+    width: 100%;
+    margin: 1rem 0rem !important;
+    box-sizing: border-box !important;
+    height: 3rem !important;
+}
+
+#loginBtn:hover {
+    background-color: white !important;
+    color: rgb(219, 68, 68) !important;
+    border: 0.1rem solid rgb(219, 68, 68) !important;
+    box-sizing: border-box !important;
+    height: 3rem !important;
+}
+
+#loginAlert {
+    display: none;
+}
+
+.slider-container img {
+    width: 100%;
+    height: 80vh;
+}
+
+.buttons button {
+    width: 5rem;
+    height: 5rem;
+    background-color: white ;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    margin: 0rem 4rem;
+    margin-top: 26rem;
+}
+
+ .buttons button:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+} 
+
+#UserName{
+    margin-top: 0.4rem;
+}
+
+.categories{
+    width: 10rem;
+    height: 6rem;
+    background-color: white;
+    border: 0.1rem rgb(0, 0, 0,0.3) solid;
+    border-radius: 1rem;
+    font-size: 1.5rem !important;
+    font-weight: bold;
+}
+.categories:hover{
+    background-color: rgb(219, 68, 68);
+    color: white;
+}
+#buttonsFilter{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+}
+#products img{
+    width: 100%;
+    height: 15rem;
+}
+#eye{
+    font-size: 2rem;
+    color: blue;
+}
+#plus{
+    font-size: 1.5rem;
+    padding: 0.1rem 0.1rem !important;
+}
+#productCard{
+    border: 0.1rem black solid !important;
+    border-radius: 0.5rem !important;
+    height: 27rem;
+    width: 22rem !important;
+}
+#cardBtns{
+    display: flex;
+    justify-content: space-between;
+}
+#products{
+    margin-left: 12rem;
+}
+#productView{
+    display: flex !important;
+    justify-content: space-evenly;
+    gap: 10rem;
+    margin-top: 5rem;
+}
+#productView img{
+    width: 45rem;
+    margin-top: 1rem;
+}
+#details{
+    width: 25rem;
+    margin-top: 10rem;
+    
+}
+#details button{
+    width: 100%;
+    margin-top: 1rem;
+}
+.detailsAlign{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+
+
+
+
+
+/* *********************************************** */
+
+.footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 2.34rem;
+}
+
+.brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.brand i {
+    color: #1da1f2;
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.links {
+    margin: 10px 0;
+}
+
+.links a {
+    color: #aaa;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: white;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #aaa;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #1da1f2;
+}
+
+
+.productInCard{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    padding: 2rem;
+}
+.productInCardData{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    align-items: center;
+}
+.productInCardData p{
+    font-size: 1.5rem;
+}
+.productInCardData img{
+    width: 7rem;
+}
+.productInCardBtns{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20rem;
+}
+.productInCardBtns p{
+    font-size: 1.5rem;
+}
+
+.btnOnCart{
+    border: 0.1rem solid black !important;
+    font-size: 1.5rem !important;
+}
+.plusBtn:hover{
+    background-color: rgb(0, 214, 0) !important;
+    color: white !important;
+}
+.minusBtn:hover{
+    background-color: rgb(235, 55, 0) !important;
+    color: white !important;
+}
+#total{
+    margin-top: 5rem;
+    color: red;
+    /* display: flex; */
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#total button{
+    width: 15rem;
+    height: 5rem;
+}
+#nothing{
+    margin-top: 15rem;
+    color: red;
+    font-weight: 900;
+    display: none;
+}
+#nothing button{
+    width: 20rem;
+    height: 5rem;
+}
+section{
+    flex: 1;
+}
+#shipped button{
+    margin-top: 2rem;
+}
+
+#successMessage {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999; 
+    display: none; /* Hidden by default */
+    transition: opacity 0.5s ease-in-out;
+}
+#goTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(219, 68, 68);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50px;
+    display: none;
+    transition: opacity 0.3s ease;
+  }
+
+

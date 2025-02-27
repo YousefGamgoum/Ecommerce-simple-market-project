@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <script src="./cart.js" defer></script>
+    <link rel="stylesheet" href="./registerStyle.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light " id="nav">
+        <div class="container-fluid">
+          <span class="navbar-brand h1 fw-bolder m-auto" id="lo" href="#"><i class="bi bi-rocket-takeoff me-2"></i>Ship Point</span>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav fw-bolder ms-4 h5 d-flex align-items-center">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="Home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">contacts</a>
+              </li>
+              
+            </ul>
+              <ul class="navbar-nav ms-auto fw-bolder h5 d-flex align-items-center">
+                <li class="nav-item">
+                  <a class="navbar-brand nav-link" d-flex align-items-center href="cart.html"><i class="bi bi-cart4 h3 me-2"></i><span>Cart</span></a>
+                </li>
+                <li class="nav-item ">
+                  <span class="navbar-brand nav-link me-3 p-0" id="UserName"></span>
+                </li>
+                <li class="nav-item text-danger ">
+                  <a class=" nav-link text-danger d-flex align-items-center" id="logoutBtn" href="login.html"><i class="bi-solid bi-box-arrow-left text-end text-danger fw-bolder mx-1" ></i>Logout</a>
+                </li>
+              </ul>
+
+          </div>
+        </div>
+      </nav>
+      <section id="CartProducts">
+        
+      </section>
+      <section class="container text-center display-1" id="nothing">
+        <p>There is No items in cart</p>
+        <button class="btn btn-lg btn-danger" id="goback">Go Back Home</button>
+      </section>
+      <section class="container" id="total">
+        <p class="h3" id="totalAmount"></p>
+        <button class="btn btn-lg btn-success text-center" id="BuyNow">Buy Now</button>
+      </section>
+      <section></section>
+      <button id="goTop"><i class="bi bi-arrow-up"></i></button>
+      <footer class="footer">
+        <div class="brand">
+            <i class="bi bi-rocket-takeoff"></i>
+            <h1>Ship Point</h1>
+        </div>
+        <p>&copy; 2025 Ship Point. All rights reserved.</p>
+        <div class="links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+</html>
